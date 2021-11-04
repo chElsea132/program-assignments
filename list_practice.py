@@ -21,3 +21,32 @@ drinks_list.pop(2)
 print(drinks_list)
 drinks_list.remove("Water")
 print(drinks_list)
+def print(my_list):
+    for el in my_list:
+        print(el)
+    return "All cities printed"
+
+def reorganize_list(my_list):
+    # [1,2,3,4,5]
+    print(my_list)
+    counter = 0
+
+    while counter <= len(my_list):
+        item1 = my_list[counter]
+        item2 = my_list[counter + 1]
+        
+        if len(item1) >= len(item2):
+            counter += 1
+            continue
+        elif counter + 1 == len(my_list):
+            break
+        else:
+            my_list.remove(item1)
+            my_list.append(item1)
+            counter += 1
+    return my_list
+
+def sort_list(my_list):
+    return sorted()
+
+print(my_list)
